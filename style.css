@@ -1,0 +1,160 @@
+/*
+
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+.raleway-<uniquifier> {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(42, 85, 87);
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+}
+
+#content{
+    display: none;
+}
+
+#topBar{
+    width: 100vw;
+    height: 4vh;
+    padding: 5px;
+    color: white;
+    display: flex;
+    align-items: center;
+    background-color: rgb(12, 47, 49);
+}
+
+#topBar > p{
+    margin-right: 30px;
+}
+
+#LogOut{
+    position: absolute;
+    right: 15px;
+}
+
+#LogOut > a{
+    color: white;
+    text-decoration: none;
+    font-weight: 800;
+}
+
+#LogOut:hover{
+    cursor: pointer;
+}
+
+#LogoutIcon{
+    color: white;
+}
+
+#loginPanel{
+    width: 100vw;
+    height: 96vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    width: 15vw;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: x-large;
+
+}
+
+form > h1{
+    color: white;
+    font-weight: 1000;
+}
+
+input[type="text"], input[type="password"]{
+    font-size: large;
+    font-weight: 700;
+    outline: none;
+    background: transparent;
+    border: none;
+    color: white;
+    border-bottom: 3px solid white;
+    padding: 3px;
+    transition: ease 0.3s;
+}
+
+input[type="text"]:focus, input[type="password"]:focus{
+    transition: ease 0.3s;
+    border-bottom: 3px solid rgb(111, 196, 196);
+}
+
+input[type="text"]::placeholder, [type="password"]::placeholder{
+    color: rgba(255, 255, 255, 0.699);
+}
+
+
+
+
+form input[type="submit"] {
+    background: transparent;
+    font-size: larger;
+    font-weight: 800;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: ease 0.3s;
+    margin-top: 10px;
+    outline: none;
+    border: 3px solid white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#register{
+    width: 15vw;
+    height: auto;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: ease 0.3s;
+    margin-top: 10px;
+    outline: none;
+    border: 3px solid white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+}
+
+#register > a{
+    font-size:normal;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+}
+
+form input [type="submit"]:hover, #register:hover{
+    transform:translateY(-10px);
+}
+
+form input[type="submit"]:hover {
+    transform: translateY(-10px); /* Adjust the value as needed */
+}
+
