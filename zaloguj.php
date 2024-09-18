@@ -1,6 +1,6 @@
 <?php
     session_start();
-    //negro negro negro
+    //negro negro negro ;sdkfkds;f;kf;;sk
 
     if((!isset($_POST['login'])) || (!isset($_POST['haslo']))){
         header('Location: index.php');
